@@ -1,0 +1,93 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    --primary-shade: #609966;
+    --secondary-shade: #9dc08b;
+    --dark-shade: #40513B;
+    --on-dark-shade: #edf1d6;
+}
+
+.container{
+    max-width: 1250px;
+    margin: auto auto;
+}
+
+.loginPage
+{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--on-dark-shade);
+}
+
+#form1 {
+    width: 400px;
+    padding: 1em 2em;
+    background: var(--dark-shade);
+    border-radius: 25px 5px;
+    box-shadow: 20px 20px 50px var(--dark-shade);
+}
+
+.form-group {
+    margin-block: 1em;
+    color: var(--on-dark-shade);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.form-group h3{
+    text-transform: uppercase;
+    margin-block: 1.5em;
+}
+
+.form-group input[type=text],
+.form-group input[type=password] {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    font-weight: bold;
+    color: var(--dark-shade);
+    background: var(--on-dark-shade);
+    transition: all 350ms ease-in-out;
+}
+
+.form-group input[type=text]:focus,
+.form-group input[type=password]:focus{
+    outline: none;
+    background: #ffff;
+}
+
+.form-group input[type=submit]{
+    width: 100px;
+    padding: 0.5em 0;
+    border: 1px solid var(--dark-shade);
+    border-radius: 5px;
+    cursor: pointer;
+    background: var(--on-dark-shade);
+    color: var(--dark-shade);
+    text-transform: uppercase;
+    transition: all 350ms ease-in-out;
+}
+
+.form-group input[type=submit]:hover{
+    background: var(--dark-shade);
+    color: var(--on-dark-shade);
+    border: 1px solid var(--on-dark-shade);
+}
+
+.form-group a {
+    color: var(--on-dark-shade);
+    transition: all 350ms ease-in-out;
+}
+
+.form-group a:hover {
+    color: #fff;
+}
